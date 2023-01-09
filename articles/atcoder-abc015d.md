@@ -1,6 +1,6 @@
 ---
 title: "ABC015-D: 高橋くんの苦悩 解説"
-emoji: "🙃"
+emoji: "💧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [AtCoder]
 published: true

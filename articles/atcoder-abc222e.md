@@ -1,6 +1,6 @@
 ---
 title: "ABC222-E: Red and Blue Tree 解説"
-emoji: "🌳"
+emoji: "💧"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [AtCoder]
 published: true

@@ -1,6 +1,6 @@
 ---
 title: "ABC284-A: Sequence of Strings 解説"
-emoji: "🅰️"
+emoji: "⬜"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [AtCoder]
 published: true
