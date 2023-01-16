@@ -1,5 +1,5 @@
 ---
-title: "ABC285-A: Edge Checker 2 解説"
+title: "ABC285-B: Longest Uncommon Prefix 解説"
 emoji: "🔲"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [AtCoder]
