@@ -7,15 +7,16 @@ published: true
 ---
 
 ## 問題
-> (実際の問題文は画像で示されています)
-> 15頂点の完全二分木があります。$2 \leq i \leq 15$について頂点$i$と頂点$\left\lfloor \frac{i}{2} \right\rfloor$($\frac{i}{2}$の小数点以下切り捨て)は辺で結ばれています。
-> 2つの整数$a$,$b$が与えられるので頂点$a$と頂点$b$が辺で結ばれているか判定してください。
+> 長さ$N$の文字列$S$が与えられます。
+> $i = 1, 2, ..., N-1$のそれぞれについて、次の条件を満たす最大の非負整数$l$を求めてください。
+>> $l + i \leq N$
+>> 全ての$1 \leq k \leq l$を満たす整数$k$について、$S$の$k$文字目と$S$の$k+i$文字目は異なる。
 
-https://atcoder.jp/contests/abc285/tasks/abc285_a
+https://atcoder.jp/contests/abc285/tasks/abc285_b
 
 ## 解説
-- 全ての辺の情報を埋め込んでも解けるが、関係性を見つければすぐに解ける
-- 制約として$a<b$があるので，$a$と$\frac{b}{2}$の切り捨てが一致するか判定すれば良い
+- ぱっと見問題がわかりにくいが，頑張って読解してコードを書こう(投げやり)
+- こういうときは入出力例を見るとイメージしやすい
 
 ::::details コード
 ```cpp
@@ -23,12 +24,21 @@ https://atcoder.jp/contests/abc285/tasks/abc285_a
 using namespace std;
 
 int main(){
-  int a, b;
-  cin >> a >> b;
+  int N;
+  cin >> N;
+  string S;
+  cin >> S;
 
-  if(a == b/2) cout << "Yes" << endl;
-  else cout << "No" << endl;
+  for(int i = 1; i <= N-1; ++i){
+    int ans = 0;
+    for(int l = 0; l < N; ++l){
+      if(l + i >= N) break;
+      if(S[l] == S[l+i]) break;
+      ++ans;
+    }
+    cout << ans << endl;
+  }
 }
 ```
 ::::
-https://atcoder.jp/contests/abc285/submissions/38099896
+https://atcoder.jp/contests/abc285/submissions/38100649
