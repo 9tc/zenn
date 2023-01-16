@@ -19,7 +19,7 @@ https://atcoder.jp/contests/abc285/tasks/abc285_d
   - 上述の状況は$A \rightarrow B \rightarrow C$となる
 - グラフで表現したときに有向閉路ができるとき、そのサイクルに含まれる人たちは誰も名前を変更することができない
 - サイクルが存在するかを判定すれば良い(サイクル検出はググれば出るのでそれを元に変更する)
-  - 今回の制約上無向グラフと見てUnionFindで判定してもOKらしい
+  - 今回の制約上UnionFindで判定してもOKらしい
 - 文字列の出現順でラベルを振って、一般的なグラフとして扱うテクニックがある
 
 https://qiita.com/drken/items/a803d4fc4a727e02f7ba#4-6-サイクル検出
